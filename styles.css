@@ -213,3 +213,89 @@ img[name="kafeimg"] {
     color: #ffebeb;
 }
 
+
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Main Content */
+#WELCOMEPAGE-main {
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Header Container */
+.WELCOMEPAGE-header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px; /* Space between the icons and heading */
+    margin-top: 20px;
+}
+
+/* Icons */
+.WELCOMEPAGE-icon {
+    width: 40px;
+    height: 40px;
+}
+
+/* Header Title */
+#WELCOMEPAGE-title {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Button Container */
+.WELCOMEPAGE-button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    gap: 15px;
+    margin-top: 30px;
+}
+
+/* Feature Buttons */
+.WELCOMEPAGE-feature-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e0e0e0; 
+    border: none;
+    border-radius: 15px;
+    padding: 12px 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+    width: 100%; 
+    max-width: 300px; 
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: left; 
+}
+
+.WELCOMEPAGE-feature-button:hover {
+    background-color: #007bff; 
+    color: #fff; 
+}
+
+.WELCOMEPAGE-button-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+#WELCOMEPAGE-footer {
+    margin-top: 30px;
+    padding: 20px;
+}
+
+.WELCOMEPAGE-JBlogo {
+    width: 150px;
+    height: auto;
+}
