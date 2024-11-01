@@ -1,0 +1,127 @@
+/* Initially hide the login div */
+#valuesLogin {
+    display: none;
+}
+
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f8f8f8;
+}
+
+/* Header container for smiley face, title, and coffee icon */
+.header-container {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between elements */
+    margin-bottom: 20px;
+}
+
+.header-container img[name="smiley-face"],
+.header-container img[name="coffee-icon"] {
+    width: 30px; /* Adjust icon size */
+    height: 30px;
+}
+
+/* Welcome title */
+h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+/* Button container for horizontal alignment */
+.button-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+/* Default button styles */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background-color: #e0e0e0; /* Default color */
+    color: #666;
+}
+
+/* Register button active by default */
+#registerButton.active, #loginButton.active {
+    background-color: #007bff; /* Blue color when active */
+    color: #fff;
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #007bff; /* Blue color on hover */
+    color: #fff;
+}
+
+/* Form container styling */
+#valuesRegister, #valuesLogin {
+    background-color: #fff;
+    padding: 20px;
+    width: 80%;
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    color: #555;
+    margin: 10px 0 5px;
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    background-color: #f3f3f3;
+}
+
+/* Submit button styling */
+.submit-button {
+    background-color: #e0e0e0;
+    color: #666;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 30px;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Submit button hover effect */
+.submit-button:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* KAFE image styling */
+img[name="kafeimg"] {
+    display: block;
+    margin: 20px auto 0; /* Center horizontally and add space above */
+    max-width: 100px;     /* Limit the max width */
+    width: 50%;           /* Responsive width */
+    height: auto;         
+    padding-left: 10px;
+}
