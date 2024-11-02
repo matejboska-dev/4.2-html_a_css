@@ -1,10 +1,24 @@
+function showSection(sectionId) {
+    const sections = document.querySelectorAll('.section');
+    const buttons = document.querySelectorAll('.toggle-button');
+
+    sections.forEach(section => {
+        section.classList.remove('active');
+    });
+    buttons.forEach(button => {
+        button.classList.remove('active');
+    });
+
+    document.getElementById(sectionId).classList.add('active');
+    document.querySelector(`[onclick="showSection('${sectionId}')"]`).classList.add('active');
+}
 
 document.addEventListener("DOMContentLoaded", () => {
     // Update slider values in real-time
     document.querySelectorAll(".slider").forEach(slider => {
-        const valueDisplay = slider.nextElementSibling; // Select the <span> element next to the slider
+        const valueDisplay = slider.nextElementSibling; 
         slider.addEventListener("input", () => {
-            valueDisplay.textContent = slider.value; // Update the <span> with slider's current value
+            valueDisplay.textContent = slider.value; 
         });
     });
 

@@ -1,9 +1,7 @@
-/* Initially hide the login div */
 #valuesLogin {
     display: none;
 }
 
-/* Reset some default styles */
 * {
     margin: 0;
     padding: 0;
@@ -11,7 +9,16 @@
     font-family: Arial, sans-serif;
 }
 
-body {
+.prihlasovaci-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f8f8f8;
+}
+
+.qrcode-body {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -119,9 +126,9 @@ input[type="text"], input[type="password"] {
 /* KAFE image styling */
 img[name="kafeimg"] {
     display: block;
-    margin: 20px auto 0; /* Center horizontally and add space above */
-    max-width: 100px;     /* Limit the max width */
-    width: 50%;           /* Responsive width */
+    margin: 20px auto 0; 
+    max-width: 100px;     
+    width: 50%;           
     height: auto;         
     padding-left: 10px;
 }
@@ -197,10 +204,13 @@ img[name="kafeimg"] {
     font-weight: bold;
     padding: 8px 16px;
     border-radius: 10px;
-    margin-bottom: 10px;
+    margin: 0 auto 10px; 
     justify-content: space-between;
     font-size: 1em;
+    max-width: 200px; 
+    width: 100%; 
 }
+
 
 .problem-item::before {
     content: url(img/warning.png);
@@ -234,7 +244,7 @@ img[name="kafeimg"] {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 15px; /* Space between the icons and heading */
+    gap: 15px; 
     margin-top: 20px;
 }
 
@@ -255,7 +265,7 @@ img[name="kafeimg"] {
 .WELCOMEPAGE-button-container {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center horizontally */
+    align-items: center; 
     gap: 15px;
     margin-top: 30px;
 }
@@ -298,4 +308,45 @@ img[name="kafeimg"] {
 .WELCOMEPAGE-JBlogo {
     width: 150px;
     height: auto;
+}
+
+
+.body-console {
+    font-family: 'Fira Mono', monospace;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    color: #000000;
+}
+
+.console {
+    width: 90%;
+    max-width: 600px;
+    height: 70vh;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.console-header {
+    background-color: #555;
+    color: #DDD;
+    text-align: center;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+.console-body {
+    background-color: #000;
+    color: #ffffff;
+    padding: 15px;
+    overflow-y: auto;
+    height: calc(100% - 50px); /* Adjusted for header height */
+    font-size: 1rem;
+}
+
+.console-body p {
+    line-height: 1.5rem;
+    margin-bottom: 0.5rem;
 }
